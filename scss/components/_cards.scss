@@ -1,0 +1,186 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    box-shadow: 0 2px 5px 0 rgba(130, 130, 130, 0.9);
+    border: 0px;
+    overflow: hidden;
+    @include transition(all 300ms ease-in-out);
+    height: 450px;
+
+    @include media(sm){
+        height: auto;
+        padding-bottom: 20px;
+    }
+    @include media(xs){
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    &:hover {
+        box-shadow: 0 2px 10px 0 rgba(130, 130, 130, 1);
+        @include transition(all 300ms ease-in-out);
+
+        .img-card {
+            img {
+                opacity: 0.8;
+            }
+        }
+    }
+
+    .img-card {
+        border-radius: 4px;
+        width: 100%;
+        overflow: auto;
+        position: relative;
+
+        img {
+            max-height: 210px;
+            width: 100%;
+        }
+    }
+
+    .caption {
+        padding: 16px;
+        max-height: 212px;
+        overflow: hidden;
+
+        h3 {
+            @include fSize(18);
+            font-family: $gobR;
+            color: $blue1;
+            margin: 0;
+            margin-bottom: 10px;
+            @extend %hover-links;
+        }
+
+        p {
+            @include fSize(14);
+            line-height: 1.43;
+            color: $black;
+        }
+    }
+
+    &-online-services {
+        height: 320px;
+
+        .img-card {
+            img {
+                max-height: 112px;
+            }
+        }
+
+        .caption {
+            padding: 11px 18px;
+            max-height: 185px;
+
+            h3 {
+                font-family: $gobB;
+                @include fSize(16);
+                color: $blue1;
+                height: 53px;
+                overflow: hidden;
+            }
+
+            hr {
+                border-top: 1px solid $green1;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                color: $gray3;
+            }
+        }
+        @include media(sm){
+            .img-card {
+                overflow: unset;
+                img {
+                    max-height: 210px;
+                }
+            }
+        }
+    }
+
+    &-home {
+        height: 400px;
+
+        .img-card img {
+            max-height: 200px;
+        }
+
+        .caption {
+            margin-top: 7%;
+
+            h3 {
+                line-height: 20px
+            }
+        }
+    }
+
+    &.sliderHome {
+        height: 539px;
+
+        //margin-bottom: 0px;
+        .caption {
+            p {
+                @include fSize(16);
+                font-style: normal;
+                font-stretch: normal;
+                letter-spacing: normal;
+                margin-bottom: 0;
+
+                &.date-text {
+                    @include fSize(14);
+                }
+
+                &.cardP {
+                    line-height: 2;
+                    color: $black;
+                }
+            }
+
+            a>h3 {
+                @include fSize(24);
+
+                @include media (xs) {
+                    @include fSize(18);
+                }
+            }
+        }
+
+        img {
+            width: 100%;
+            height: 300px;
+            max-height: 300px;
+
+            @include media(xs) {
+                max-height: 210px;
+            }
+        }
+    }
+}
+
+.view-home-informacion-general-calugas {
+    .views-row-odd {
+        .cards {
+            .card-home {
+                flex-direction: column-reverse;
+
+                .caption {
+                    margin-top: 0;
+                    margin-bottom: 7%;
+                }
+            }
+        }
+
+        .views-row-even {
+            .cards {
+
+                .card-home {
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}

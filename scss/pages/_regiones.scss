@@ -1,0 +1,138 @@
+.node-type-regiones {
+
+    h1.page-header {
+        display: none;
+    }
+
+    h2.block-title {
+        margin-top: 30px;
+    }
+
+    .region-header {
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        .region-nombre {
+            position: absolute;
+            top: 4%;
+            right: 20%;
+            left: 1.5%;
+            background-color: rgba($color: $white, $alpha: .8);
+            border-radius: 4px;
+            padding: 14px 15px;
+
+            h1 {
+                margin-top: 0;
+                font-family: $gobL;
+                @include fSize(30);
+            }
+
+            p {
+                font-family: $gobR;
+                @include fSize(18);
+            }
+        }
+
+        .region-bajada {
+            width: 100%;
+            background-color: rgba($black, .55);
+            position: absolute;
+            bottom: 0;
+            color: $white;
+            padding: 12px 30px 6px;
+        }
+    }
+
+    .view-regiones-ultima-noticia {
+        margin-top: 18px;
+        margin-bottom: 36px;
+
+        h2 {
+            @extend .subtitle-text;
+        }
+
+        .youtube-field-player {
+            float: right;
+            margin-top: 38px;
+            margin-left: 70px;
+            max-height: 300px;
+            max-width: 620px;
+            width: 100%;
+            margin-bottom: 16px;
+        }
+
+        #bannerR{display: none;}
+    }
+
+    .regiones-mas-noticias {
+        background-color: $gray1;
+    }
+
+    .view-regiones-seremi {
+        h4 {
+            font-family: $gobR;
+            line-height: 20px;
+            @include fSize(24);
+            margin-top: 35px;
+        }
+    }
+
+    .acudir-sec {
+        h3 {
+            font-family: $gobL;
+            @include fSize(30);
+            margin-top: 70px;
+            margin-bottom: 30px;
+        }
+    }
+
+    @include media(sm) {
+        .view-regiones-ultima-noticia {
+            .youtube-field-player {
+                float: none;
+                max-width: unset;
+
+                margin: {
+                    left: auto;
+                    right: auto;
+                }
+            }
+        }
+
+        .view-regiones-seremi {
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    @include media(xs) {
+        .region-header {
+            position: relative;
+            min-height: 285px;
+            overflow: hidden;
+
+            img {
+                width: auto;
+                height: auto;
+                max-width: unset;
+            }
+
+            .region-nombre {
+                right: 3%;
+                left: 3%;
+            }
+        }
+        .view-regiones-seremi {
+            img {
+                width: 100%;
+                height: auto;
+            }
+            p{margin-bottom: 20px;}
+        }
+    }
+}

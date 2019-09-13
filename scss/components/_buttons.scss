@@ -1,0 +1,149 @@
+.btn {
+  @include fSize(16);
+  padding-top: 10px;
+  display: table;
+  position: relative;
+
+  &:focus {
+    outline: 0px;
+  }
+
+  &.btn-blanco {
+    background: $white;
+    border: 1px solid $blue1;
+    color: $blue1;
+    font-family: $gobR;
+    text-align: center;
+    height: 42px;
+    width: 224px;
+    margin-bottom: 54px;
+
+    &:hover {
+      background-color: rgba($blue1, 0.14);
+      @include transition(all 300ms ease-in-out);
+    }
+  }
+
+  &.btn-celeste {
+    background: $blue1;
+    font-family: $gobR;
+    text-align: center;
+    height: 42px;
+    width: 313px;
+    color: $white;
+    margin-bottom: 54px;
+
+    &:hover {
+      background-color: darken($blue1, 10%);
+      @include transition(all 300ms ease-in-out);
+    }
+
+    @include media(xs){
+      width: 100%;
+    }
+  }
+
+  &.flecha-volver {
+    width: 31px;
+    height: 31px;
+    box-shadow: 0 2px 4px 0 $gray2;
+    border: solid 1px $green1;
+    background-color: $white;
+    border-radius: 50%;
+    display: inline-block;
+
+    &:before {
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 8px 14px 8px;
+      border-color: transparent transparent $green1 transparent;
+      position: absolute;
+      transform: rotate(-90deg);
+      top: 7px;
+      left: 5px;
+    }
+
+    &:hover {
+      background-color: $green1;
+      @include transition(all 200ms ease-in-out);
+      &:before {
+        border-color: transparent transparent #fff transparent;
+      }
+    }
+  }
+
+  &.flecha-arriba {
+    width: 31px;
+    height: 31px;
+    box-shadow: 0 2px 4px 0 $gray2;
+    border: solid 1px $green1;
+    background-color: $white;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 17px;
+
+    &:before {
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 8px 14px 8px;
+      border-color: transparent transparent $green1 transparent;
+      position: absolute;
+      top: 6px;
+      left: 7px;
+    }
+
+    &:hover {
+      background-color: $green1;
+      @include transition(all 200ms ease-in-out);
+      &:before {
+        border-color: transparent transparent #fff transparent;
+      }
+    }
+  }
+}
+
+
+.btn-primary.btn-a {
+  width: 200px;
+  height: 50px;
+  background: transparent;
+  border: 3px solid #ffc700;
+  border-radius: 0px;
+  transform: skew(-14deg);
+  // position: absolute;
+  // right: 9%;
+  // top: 22%;
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(246,186,0,1);
+  -moz-box-shadow: 0px 0px 6px 0px rgba(246,186,0,1);
+  box-shadow: 1px 1px 7px 2px rgba(246, 186, 0, 0.68),
+              inset 0px 0px 0px 0px rgba(255,199,0,0.42);
+  ;
+/* 
+  -webkit-box-shadow: inset 0px 0px 0px 0px rgba(255,199,0,0.42);
+  -moz-box-shadow: inset 0px 0px 0px 0px rgba(255,199,0,0.42);
+  box-shadow: inset 0px 0px 0px 0px rgba(255,199,0,0.42); */
+  transition: .4s;
+}
+
+.btn-a:after {
+  content: 'Postular';
+  font-size: 20px;
+  position: absolute;
+  transform: skew(10deg);
+  left: 61px;
+  top: 8px;
+  color: #ffc700;
+}
+
+.btn-primary.btn-a:hover {
+  -webkit-box-shadow: inset 0px 0px 20px 15px rgba(255,199,0,0.42);
+  -moz-box-shadow: inset 0px 0px 20px 15px rgba(255,199,0,0.42);
+  box-shadow: 1px 1px 7px 2px rgba(246, 186, 0, 0.68),
+              inset 0px 0px 20px 15px rgba(255,199,0,0.42);
+
+  /* transition: .4s; */
+}

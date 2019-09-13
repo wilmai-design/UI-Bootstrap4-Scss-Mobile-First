@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M102,200 C45.6669555,200 0,155.228475 0,100 C0,44.771525 45.6669555,0 102,0 C147.559546,0 186.142592,29.2842569 199.233988,69.7006611 C202.32972,79.2579577 204,89.4377462 204,100 C204,155.228475 158.333044,200 102,200 Z M102.684564,162.162162 C138.223531,162.162162 167.033557,134.331214 167.033557,100 C167.033557,93.4034083 165.969893,87.046806 163.999208,81.081513 C155.713686,56.0011142 131.394875,37.8378378 102.684564,37.8378378 C67.1455961,37.8378378 38.3355705,65.6687858 38.3355705,100 C38.3355705,134.331214 67.1455961,162.162162 102.684564,162.162162 Z" id="path-1"></path>
+    </defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Sala-de-prensa---Esperando-descarga" transform="translate(-403.000000, -491.000000)">
+            <g id="Group-6" transform="translate(189.000000, 200.000000)">
+                <g id="Group-4" transform="translate(214.000000, 291.000000)">
+                    <g id="Loading" opacity="0.76171875">
+                        <g id="Path-105">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="Mask"></g>
+                            <path d="M103.777246,199.298068 L103.760937,156.615077 L163.913384,81.2843855 L205.957469,67.5289202 L169.019867,1.86810402 L44.0309036,-8.15752944 L-0.444917638,39.5479374 L-10.9008945,100.691745 C-10.9008945,100.691745 -16.8326858,151.556245 8.49102018,173.330905 C48.1131544,208.507549 103.777246,199.298068 103.777246,199.298068 Z" fill="#0F69B4" mask="url(#mask-2)"></path>
+                        </g>
+                    </g>
+                    <text id="71%" font-family="gobCL" font-size="30" font-weight="normal" fill="#9DBE15">
+                        <tspan x="73" y="111">71%</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,77 @@
+.front {
+    .region-content {
+        section {
+            padding-top: 30px;
+        }
+    }
+
+    .page-header {
+        display: none;
+    }
+
+    .view-home-noticias-carrusel {
+        .btn-celeste {
+            margin: 40px -70px 5px auto;
+            @include media(sm) {
+                margin: 40px auto 5px auto;
+            }
+
+            @include media(xs) {
+                margin: 20px auto 5px auto;
+            }
+        }
+    }
+
+    .youtube-home-bloque {
+        .youtube-field-player {
+            width: 100%;
+        }
+    }
+
+    .twitter-home-bloque {
+        margin-top: 90px;
+        @include media(sm) {
+            display: none;
+        }
+
+        @include media(xs) {
+            display: none;
+        }
+    }
+
+    .staticimg-home-bloque {
+        margin-top: 90px;
+    }
+
+    .banners-gobierno {
+        background-color: $gray1;
+        margin-top: 33px;
+
+        .view-home-slider-gobierno {
+            padding-top: 8px;
+            padding-bottom: 48px;
+            //margin-bottom: 48px
+        }
+    }
+
+    .flecha-volver {
+        display: none;
+    }
+
+    .up-back {
+        padding-top: 0;
+
+        .container {
+            border-top: 0px solid $green1;
+        }
+    }
+
+    .view-home-slider-servicios-online {
+
+        .slick-prev, .slick-next {
+            @include media(xs){
+                display: none !important;
+            }
+        }
+    }
+}

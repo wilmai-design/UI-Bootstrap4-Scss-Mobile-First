@@ -1,0 +1,44 @@
+.node-type-page {
+    .region-content {
+        .main-img-page {
+            img {
+                margin: 0 0 36px 22px;
+                float: right;
+                width: 50%;
+            }
+        }
+
+        .main-content-page {
+            margin-bottom: 70px;
+
+            h2 {
+                @include fSize(30);
+                font-family: $gobL;
+                font-weight: 300;
+                margin-bottom: 15px;
+            }
+        }
+
+        .view-sitios-relacionados {
+            .view-content {
+                @extend %clearfix;
+            }
+
+            .view-footer a {
+                margin: 45px auto auto auto;
+            }
+        }
+    }
+
+    @include media("xs") {
+        .region-content {
+            .main-img-page {
+                img {
+                    float: none;
+                    width: 100%;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,98 @@
+.pagination {
+  display: block;
+  clear: both;
+  padding-top: 67 - 42px;
+
+  li {
+    margin-right: 15px;
+    display: inline-block;
+    line-height: 42px;
+    vertical-align: middle;
+
+    a {
+      height: 42px;
+      width: 42px;
+      border: none !important;
+      border-radius: 4px;
+      text-align: center;
+      padding: 6px;
+      color: $gray4;
+      line-height: 2;
+    }
+
+    &.active {
+      span {
+        background: $green1;
+        border: none;
+        border-radius: 4px;
+      }
+    }
+
+    %paginator-arrows {
+      position: relative;
+      font: normal normal normal 14px/1 FontAwesome;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      text-indent: -100px;
+      padding: 6px;
+      font-size: 0;
+
+      &:hover{
+        background-color: darken($blue1, 10%);
+      }
+
+      &::before {
+        @include pseudo();
+        top: -1px;
+        z-index: 2;
+        @include fSize(32);
+        text-indent: 0;
+      }
+    }
+
+    &.prev{
+      margin-right: 45px;
+
+      a {
+        color: $white;
+        background: $blue1;
+        width: 31px;
+        height: 31px;
+        border-radius: 50%;
+
+        @extend %paginator-arrows;
+
+        &::before {
+          content: '\f104';
+          left: 8px;
+        }
+      }
+    }
+
+    &.next {
+      margin-left: 30px;
+      margin-right: 0px;
+
+      a {
+        color: $white;
+        background: $blue1;
+        width: 31px;
+        height: 31px;
+        border-radius: 50%;
+
+        @extend %paginator-arrows;
+
+        &::before {
+          content: '\f105';
+          left: 11px;
+        }
+      }
+    }
+
+    @include media(xs){
+      margin-right: -5px;
+      &.prev{margin-right: 15px;}
+      &.next{margin-left: 15px;}
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.block-title,
+.page-header{
+    @include fSize(30);
+    font-family: $gobR;
+    position: relative;
+    padding-left: 20px;
+    color: $black;
+    line-height: normal;
+    margin: 0 0 45px;
+    border: 0px;
+    &::before{
+        @include pseudo;
+        top: 0+8px;
+        left: 0;
+        height: 25px;
+        width: 6px;
+        background-color: $green1;
+    }
+
+    @include media(sm){
+        margin-top: 45px;
+    }
+    @include media(xs){
+        margin-top: 45px;
+    }
+}
+.subtitle-text{
+    @include fSize(30);
+    font-family: $gobL;
+    color: $black;
+    line-height: normal;
+    letter-spacing: 0px;
+    margin: 0 0 10px;
+}
+.date-text{
+    @include fSize(14);
+    font-family: $gobL;
+    color: $gray4;
+    line-height: 1.43;
+}
+.results-text{
+    @include fSize(14);
+    font-family: $gobL;
+    color: $black;
+    line-height: 1.43;
+}

@@ -1,0 +1,30 @@
+name = Ministerio de Energía
+description = A Bootstrap Sub-theme.
+core = 7.x
+base theme = bootstrap
+
+regions[menu_top]		 = 'Menu Top'
+regions[buscador_top]    = 'Buscador Top'
+regions[navigation]      = 'Navigation'
+regions[header]          = 'Top Bar'
+regions[highlighted]     = 'Highlighted'
+regions[help]            = 'Help'
+regions[content]         = 'Content'
+regions[sidebar_first]   = 'Primary'
+regions[sidebar_second]  = 'Secondary'
+regions[banner_gobierno] = 'Banner Gobierno'
+regions[footer]          = 'Footer'
+regions[page_top]        = 'Page top'
+regions[page_bottom]     = 'Page bottom'
+
+stylesheets[all][] = css/font-awesome.min.css
+stylesheets[all][] = js/redes-sociales/jssocials.css
+stylesheets[all][] = js/redes-sociales/jssocials-theme-flat.css
+stylesheets[all][] = css/bootstrap.min.css
+stylesheets[all][] = css/overrides.css
+stylesheets[all][] = css/style.min.css
+
+scripts[] = js/redes-sociales/jssocials.min.js
+scripts[] = js/bootstrap.min.js
+scripts[] = js/prefixfree.min.js
+scripts[] = js/global.js

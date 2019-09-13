@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="45px" height="45px" viewBox="0 0 45 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Right</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="23" cy="20" r="20"></circle>
+        <filter x="-17.5%" y="-12.5%" width="135.0%" height="135.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Right" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Oval-7">
+            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+            <use fill="#0F69B4" fill-rule="evenodd" xlink:href="#path-1"></use>
+        </g>
+        <path d="M28.668693,20.3951368 L18.782374,30.2814561" id="Line" stroke="#FFFFFF" stroke-linecap="square" transform="translate(23.531915, 25.531915) rotate(-180.000000) translate(-23.531915, -25.531915) "></path>
+        <path d="M18.668693,9.39513678 L28.5,19.5" id="Line-Copy" stroke="#FFFFFF" stroke-linecap="square" transform="translate(23.500000, 14.500000) rotate(-180.000000) translate(-23.500000, -14.500000) "></path>
+    </g>
+</svg>

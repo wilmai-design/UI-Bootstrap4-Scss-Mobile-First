@@ -1,0 +1,219 @@
+.carouselWrapper {
+  position: relative;
+
+  %slick-arrows {
+    position: absolute;
+    top: 45%;
+    background: none;
+    border: 0;
+    z-index: 2;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-position: top left;
+    font-size: 0px;
+    width: 45px;
+    height: 45px;
+  }
+
+  .slick-prev {
+    @extend %slick-arrows;
+    left: 0;
+    background-image: url('../img/icons/Arrow-left.svg');
+
+    @include media(sm) {
+      left: -15px;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .slick-next {
+    @extend %slick-arrows;
+    right: 0;
+    background-image: url('../img/icons/Arrow-right.svg');
+
+    @include media(sm) {
+      right: -15px;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .slick-dots {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      margin-right: 10px;
+
+      button {
+        width: 10px;
+        height: 11px;
+        font-size: 0px;
+        border-radius: 50%;
+        border: none;
+        background: $gray2;
+        padding: 0px 5.4px;
+      }
+
+      &.slick-active {
+        button {
+          background: $blue1;
+        }
+      }
+    }
+  }
+
+  %slider-content {
+    position: relative;
+
+    .slide__content a img {
+      margin: auto;
+    }
+  }
+
+  .sliderHome {
+    @extend %slider-content;
+
+    .caption {
+      max-height: 215px;
+    }
+
+  }
+
+  .sliderServicios {
+    @extend %slider-content;
+    padding: 0 100px;
+    margin-top: 40px;
+
+    .slick-prev,
+    .slick-next {
+      top: 33%;
+    }
+
+    @include media (xs) {
+      padding: 0px 0px;
+      .slick-prev,
+      .slick-next {
+        width: 26px;
+        height: 27px;
+        background-position: center;
+        background-size: cover;
+      }
+    }
+  }
+
+  .carouselNoticias {
+    .card {
+      box-shadow: 0 2px 5px 0 rgba(130, 130, 130, 0.9);
+      @include transition(all 300ms ease-in-out);
+
+      &:hover {
+        box-shadow: 0 2px 10px 0 rgba(130, 130, 130, 1);
+        @include transition(all 300ms ease-in-out);
+      }
+
+      @include media(xs){
+        height: 450px;
+        .caption{
+          max-height: unset;
+        }
+      }
+    }
+
+    .slick-prev,
+    .slick-next {
+      top: 48%;
+
+      @include media(xs) {
+        display: none !important;
+      }
+    }
+  }
+
+  .sliderIniciativas {
+    @extend %slider-content;
+
+    .slick-prev,
+    .slick-next {
+      top: 40%;
+
+      @include media(xs) {
+        display: none !important;
+      }
+    }
+  }
+
+  .sliderEnergia {
+    @extend %slider-content;
+    padding: 0 50px;
+
+    .slick-prev,
+    .slick-next {
+      top: 30%;
+
+      @include media(xs) {
+        display: none !important;
+      }
+    }
+  }
+
+  .sliderInformacionGeneral {
+    @extend %slider-content;
+
+    .card.sliderHome {
+      height: auto;
+
+      .caption {
+        position: absolute;
+        top: 50px;
+        left: 45px;
+        width: 370px;
+        height: 180px;
+        background-color: $white;
+        border-radius: 4px;
+
+        @include media(xs) {
+          top: 35px;
+          left: 28px;
+          width: 225px;
+          height: 141px;
+        }
+      }
+      @include media(sm){
+        padding-bottom: 0;
+      }
+      @include media(xs){
+        padding-bottom: 0;
+
+        .caption{
+          height: 142px;
+          left: 18px;
+        }
+      }
+    }
+
+    .slick-prev,
+    .slick-next {
+      top: 38%;
+
+      @include media(xs) {
+        display: none !important;
+      }
+    }
+
+    .slick-prev {
+      left: -10px;
+    }
+
+    .slick-next {
+      right: -10px;
+    }
+  }
+}

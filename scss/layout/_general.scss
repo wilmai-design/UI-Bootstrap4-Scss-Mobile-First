@@ -1,0 +1,29 @@
+html {
+  font-size: #{$fontSizeG}px;
+}
+
+body {
+  font-family: $balloTammaR;
+  min-height: 100vh;
+  font-size: 1rem;
+  color: $black;
+}
+
+.code {
+  display: none;
+}
+
+.doc {
+  padding: 1em;
+}
+
+.component {
+  margin: 1em 0;
+}
+
+a{
+  color: $blue1;
+  &:hover{
+    text-decoration: none;
+  }
+}

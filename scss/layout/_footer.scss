@@ -1,0 +1,159 @@
+.up-back {
+    text-align: right;
+    padding-top: 30px;
+
+    .container {
+        border-top: 1px solid $green1;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+.footer-me {
+    height: 260px;
+    background-color: $blue3;
+    color: $white;
+    position: relative;
+
+    .row {
+        position: relative;
+    }
+
+    h3 {
+        font-family: $gobL;
+        @include fSize(30);
+        display: table;
+        margin: 30px auto;
+    }
+
+    .footer-me-content {
+        p {
+            font-family: $gobL;
+            @include fSize(16);
+        }
+
+        a {
+            color: $white;
+        }
+    }
+
+    .first {
+        h3 {
+            width: 80%;
+        }
+
+        h5 {
+            @include fSize(16);
+            font-family: $gobR;
+        }
+
+        .footer-me-content {
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+
+    .second {
+        .footer-me-content {
+            border-right: 1px solid $white;
+            border-left: 1px solid $white;
+            text-align: center;
+        }
+    }
+
+    .footer-me-rs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 260px;
+
+        ul {
+            padding: 0;
+
+            li {
+                display: inline-block;
+                margin: 0 5px;
+
+                i.fa {
+                    font-size: 24px;
+                    border: 1px solid $white;
+                    padding: 7px;
+                    border-radius: 50%;
+                    color: $white;
+                    width: 40px;
+                    height: 40px;
+                    text-align: center;
+                    @include transition(all 300ms ease-in-out);
+
+                    &:hover {
+                        background-color: $white;
+                        color: $blue3;
+                        @include transition(all 300ms ease-in-out);
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-logo-gob {
+        position: absolute;
+        bottom: 0;
+        left: 3.2%;
+    }
+
+    @include media(sm) {
+        height: auto;
+    }
+
+    @include media(xs) {
+        height: auto;
+
+        h3 {
+            display: block;
+            margin: 30px;
+            border-top: 1px solid #fff;
+            padding-top: 20px;
+        }
+        .institutions-brand {
+            list-style: none;
+            background-color: #fff;
+            border-radius: 4px;
+            width: 80%;
+            height: 105px;
+            opacity: .9;
+            margin-left: 30px;
+            padding: 15px 20px;
+            li {
+                float: left;
+                width: 42%;
+                margin-bottom: 23px;
+                margin-right: 15px;
+            }
+        }
+        
+
+        .first {
+            h3 {
+                border-top: none;
+            }
+        }
+
+        .second {
+            .footer-me-content {
+                border-right: none;
+                border-left: none;
+                text-align: left;
+                padding-left: 28px;
+            }
+        }
+
+        .footer-me-rs {
+            height: 130px;
+
+            ul {
+                display: flex;
+                clear: both;
+            }
+        }
+    }
+}

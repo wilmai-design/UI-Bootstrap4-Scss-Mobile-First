@@ -1,0 +1,19 @@
+.modal-ME{
+    .modal-header {
+        border-bottom: 0px;
+        text-align: center;
+
+        h4{
+            font-family: $gobL;
+            @include fSize(30);
+            margin-top: 30px;
+        }
+
+        .close{
+            font-family: $gobR;
+            @include fSize(24);
+            color: $black;
+            opacity: 1;
+        }
+    }
+}

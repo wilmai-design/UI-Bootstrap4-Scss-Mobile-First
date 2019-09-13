@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="79" height="112" viewBox="0 0 79 112">
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#EFC202" d="M79 30v82H0V30h13.913C17.887 39.961 27.62 47 39 47s21.113-7.039 25.087-17H79z"/>
+        <path stroke="#F1C400" d="M11.5.5h57v62h-57z"/>
+        <g fill="#F1C400" fill-rule="nonzero">
+            <path d="M49.21 11.209l-6.502-.959L39.8 4.273l-2.908 5.977-6.501.959 4.705 4.653-1.111 6.57L39.8 19.33l5.815 3.102-1.11-6.57zM39.8 29.285l-10.455-4.183v5.941l10.516 4.207 10.394-4.21v-5.938z"/>
+            <path d="M39.8 37.296l-10.455-4.182v5.94l10.516 4.207 10.394-4.21v-5.937z"/>
+        </g>
+        <g fill="#000">
+            <path fill-rule="nonzero" d="M28.335 67.426L38.999 56.73l10.666 10.696a1.945 1.945 0 0 0 2.763 0 1.962 1.962 0 0 0 0-2.77L40.38 52.573c-.763-.765-1.999-.765-2.762 0L25.572 64.655a1.963 1.963 0 0 0 0 2.77c.763.766 2 .766 2.763 0z"/>
+            <text font-family="Roboto-Bold, Roboto" font-size="15.4" font-weight="bold" transform="translate(20 52)">
+                <tspan x=".273" y="38">Subir</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

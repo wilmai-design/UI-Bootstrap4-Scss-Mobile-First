@@ -1,0 +1,194 @@
+@include media(xs) {
+    .wrapper-position-video {
+        .wrapper-video {
+            video {
+                width: auto !important;
+            }
+            .wrapper-lineas-primera-section {
+                img {
+                    &:nth-child(1) {
+                        display: none;
+                    }
+                    &:nth-child(2) {
+                        position: absolute;
+                        left: -139%;
+                        height: 590px;
+                    }
+                    &.Line-3 {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .card-slide-video {
+            width: 86%;
+            max-width: auto;
+            height: 396px;
+            background-image: url(../../img/icon/triangle.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            text-align: center;
+            position: absolute;
+            top: 16%;
+            left: 7%;
+            h4 {
+                @include fSize(20); 
+                font-family: $gobR;
+                line-height: 69px;
+                color: $graySoft;
+                margin: 14px 0px -30px !important;
+            }
+        }
+        .logo-acreditacion {
+            position: absolute;
+            bottom: 160px;
+            right: 23%;
+            padding: 4px;
+            border-radius: 7px;
+            width: 54%;
+        }
+    }
+}
+
+.wrapper-position-video {
+    position: absolute;
+    top: 0px;
+    z-index: -3;
+    overflow: hidden;
+    .wrapper-imagen {
+        position: absolute;
+        top: 0px;
+        img {
+            width: 100vw;
+        }
+    }
+    .wrapper-video {
+        video {
+            width: 100vw;
+        }
+        .wrapper-lineas-primera-section {
+            width: 100vw;
+            height: 650px;
+            position: absolute;
+            top: 0px;
+            overflow: hidden;
+            img {
+                &:nth-child(1) {
+                    position: absolute;
+                    // right: 5%;
+                }
+                &:nth-child(2) {
+                    position: absolute;
+                    right: 5%;
+                }
+                &.Line-3 {
+                    position: absolute;
+                    right: 0%;
+                }
+            }
+        }
+    }
+    .card-slide-video {
+        // h4 {
+        //     @include fSize(22);
+        //     font-family: $gobR;
+        //     line-height: 69px;
+        //     color: $graySoft;
+        //     margin: 40px 0px -28px;
+        // }
+        h3 {
+            @include fSize(40);
+            font-family: $balloTammaR;
+            line-height: 58px;
+            color: $graySoft;
+        }
+        .btn-a {
+            margin: 0px auto 0px;
+        }
+    }
+    
+}
+@include media(md) {
+    .wrapper-position-video {
+        position: absolute;
+        top: 0px;
+        z-index: -3;
+        overflow: hidden;
+        .wrapper-imagen {
+            position: absolute;
+            top: 0px;
+            img {
+                width: 100vw;
+            }
+        }
+        .wrapper-video {
+            video {
+                width: 100vw;
+            }
+            .wrapper-lineas-primera-section {
+                width: 100vw;
+                height: 650px;
+                position: absolute;
+                top: 0px;
+                overflow: hidden;
+                img {
+                    &:nth-child(1) {
+                        position: absolute;
+                        // right: 5%;
+                    }
+                    &:nth-child(2) {
+                        position: absolute;
+                        right: 5%;
+                    }
+                    &.Line-3 {
+                        position: absolute;
+                        right: 0%;
+                    }
+                }
+            }
+        }
+        .card-slide-video {
+            width: 344px;
+            max-width: 400px;
+            height: 396px;
+        
+            background-image: url("../../img/icon/triangle.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            text-align: center;
+            position: absolute;
+            top: 30%;
+            left: 7%;
+            h4 {
+                @include fSize(22);
+               font-family: $gobR;
+               line-height: 69px;
+               color: $graySoft;
+               margin: 40px 0px -28px;
+            }
+            // h4 {
+            //     @include fSize(22);
+            //     font-family: $gobR;
+            //     line-height: 69px;
+            //     color: $graySoft;
+            //     margin: 40px 0px -28px;
+            // }
+            // h3 {
+            //     @include fSize(40);
+            //     font-family: $balloTammaR;
+            //     line-height: 58px;
+            //     color: $graySoft;
+            // }
+            // .btn-a {
+            //     margin: 0px auto 0px;
+            // }
+        }
+        .logo-acreditacion {
+            position: absolute;
+            bottom: 50px;
+            right: 8%;
+            padding: 4px;
+            border-radius: 7px;
+        }
+    }
+}

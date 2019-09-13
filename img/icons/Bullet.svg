@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="54px" height="13px" viewBox="0 0 54 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Serv.-Home" transform="translate(-438.000000, -162.000000)">
+            <g id="Group" transform="translate(439.000000, 163.000000)">
+                <ellipse id="Oval" stroke="#0F69B4" fill="#0F69B4" cx="5.3" cy="5.5" rx="5.3" ry="5.5"></ellipse>
+                <ellipse id="Oval" fill="#C0C0C0" cx="25.5363636" cy="5.5" rx="5.3" ry="5.5"></ellipse>
+                <ellipse id="Oval" fill="#C0C0C0" cx="47.7" cy="5.5" rx="5.3" ry="5.5"></ellipse>
+            </g>
+        </g>
+    </g>
+</svg>

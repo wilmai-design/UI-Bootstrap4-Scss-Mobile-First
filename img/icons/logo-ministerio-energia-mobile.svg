@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="131px" height="78px" viewBox="0 0 131 78" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Header" transform="translate(-15.000000, 0.000000)">
+            <g id="Group-4" transform="translate(15.000000, 0.000000)">
+                <text id="Ministerio-de" font-family="gobCL-Bold, gobCL" font-size="19" font-weight="bold" letter-spacing="-0.004" fill="#FFFFFF">
+                    <tspan x="11.6621" y="50.7807615">Minis</tspan>
+                    <tspan x="57.3181" y="50.7807615" letter-spacing="-0.479">t</tspan>
+                    <tspan x="63.9071" y="50.7807615">erio de</tspan>
+                </text>
+                <text id="Energía" font-family="gobCL-Bold, gobCL" font-size="19" font-weight="bold" letter-spacing="-0.004" fill="#FFFFFF">
+                    <tspan x="11.6621" y="73.5805615">Ene</tspan>
+                    <tspan x="41.7081" y="73.5805615" letter-spacing="-0.289">r</tspan>
+                    <tspan x="47.9171" y="73.5805615">gía</tspan>
+                </text>
+                <polygon id="Fill-2" fill="#0F69B4" points="0 14.7467 53.289 14.7467 53.289 -0.0003 0 -0.0003"></polygon>
+                <polygon id="Fill-3" fill="#EB3C46" points="53.289 14.7467 130.076 14.7467 130.076 -0.0003 53.289 -0.0003"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

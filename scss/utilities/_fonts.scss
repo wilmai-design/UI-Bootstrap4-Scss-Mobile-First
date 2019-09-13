@@ -1,0 +1,52 @@
+//fuentes
+
+//funcion
+@mixin font-face ($family, $path) {
+    @font-face {
+        font-family: '#{$family}';
+        src: url('#{$path}.eot');
+        src: url('#{$path}.eot?#iefix') format('embedded-opentype'),
+             url('#{$path}.woff2') format('woff2'),
+             url('#{$path}.woff') format('woff'),
+             url('#{$path}.ttf') format('truetype'),
+             url('#{$path}.svg#gobclbold') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+}
+
+//variables
+$balloTammaR: 'balloTammaR';
+
+
+
+
+$gobH: 'gobclheavy';
+
+$gobB: 'gobclbold';
+$gobH: 'gobclheavy';
+$gobL: 'gobcllight';
+$gobR: 'gobclregular';
+
+$robotoL: 'robotolight';
+$robotoB: 'robotobold';
+$robotoI: 'robotoitalic';
+$robotoR: 'robotoregular';
+
+
+// Ruta de las tipografías
+@include font-face($balloTammaR, '../fonts/BalooTamma-Regular');
+
+@include font-face($gobH, '../fonts/gobcl_heavy-webfont');
+
+@include font-face($gobL, '../fonts/gobcl_light-webfont');
+
+@include font-face($gobR, '../fonts/gobcl_regular-webfont');
+
+@include font-face($robotoB, '../fonts/roboto-bold-webfont');
+
+@include font-face($robotoI, '../fonts/roboto-italic-webfont');
+
+@include font-face($robotoL, '../fonts/roboto-light-webfont');
+
+@include font-face($robotoR, '../fonts/roboto-regular-webfont');
